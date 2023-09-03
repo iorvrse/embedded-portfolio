@@ -1,5 +1,5 @@
 # embedded-portfolio
-This repo contains something I am learning related to computer engineering.
+This repo contains something I am currently learning in computer engineering.
 
 ## Hardware Programming
 I have never done a real project with microcontroller. Just learning each peripheral function of microcontroller such as GPIO, UART, I2C, ADC, etc. to interfacing some devices. I start learn the concept of hardware programming using avr 8-bit microcontroller (ATmega16A) using avr-libc. Learn how to read datasheet and trying to write a simple hardware abstraction layer to achieve the functionality of each peripherals and write a simple libraries to interfacing some devices such as LCD and sensors. Then moving to arm cortex 32-bit microcontroller using stm32f401 (Blackpill board). Firstly, I tried to do the same thing like in avr, direct accessing register of each peripheral, configuring it, etc. But, stm32 has much more features and complex configuration compared to avr 8-bit and it takes a lot of time in development. Also, the free resources to learn "baremetal stm32" is very limited. Honestly, I got stuck when trying configure the system clock, Lol. So, I decided to use STM32CubeMX, a software by ST that can makes your life easier. With that you can generate a HAL or LL API for initializing each peripherals we wanna use using GUI. I use LL here.
